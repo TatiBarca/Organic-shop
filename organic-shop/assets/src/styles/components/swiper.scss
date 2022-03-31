@@ -1,0 +1,117 @@
+.swiper {
+  $self: &;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  &-img {
+    position: absolute;
+    right: 85px;
+    bottom: 60px;
+
+    @include below($lg-max) {
+      bottom: 0;
+    }
+    @include below($md-max) {
+      width: 90px;
+      bottom: 150px;
+      right: 55px;
+    }
+    @include below($sm-max) {
+      width: 70px;
+      bottom: 120px;
+    }
+    @include below($xs-max) {
+      width: 45px;
+      bottom: 75px;
+    }
+  }
+
+  &-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+  }
+
+  &-button-next,
+  &-button-prev {
+    border: 1px solid $green;
+    padding: 0 20px;
+    color: $black;
+    background-color: $green;
+    color: $white;
+
+    &:after {
+      content: 'none';
+    }
+
+    @include below($xs-max) {
+      width: 19px;
+      height: 32px;
+      padding: 0 16px
+    }
+
+  }
+}
+
+  .swiper-button-prev.swiper-button-disabled,
+  .swiper-button-next.swiper-button-disabled {
+    background-color: transparent;
+    opacity: 1;
+    color: #000;
+  }
+
+  .swiper-button-next2 {
+    position: absolute;
+    text-align: center;
+    //bottom: 0;
+    top: 420px;
+    //right: 480px;
+    right: calc(50% - 60px);
+    border: 1px solid $green;
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    padding-top: 2px;
+    padding: 0;
+
+  }
+
+  .swiper-button-prev2 {
+    position: absolute;
+    right: 580px;
+    transform: rotate(-180deg);
+    text-align: center;
+    //bottom: 0;
+    //right: 580px;
+    border: 1px solid $green;
+    width: 40px;
+    height: 40px;
+    top: 420px;
+    //left: 480px;
+    left: calc(50% - 60px);
+    padding: 0;
+    padding-bottom: 13px;
+    background-color: green;
+
+    & img {
+      padding-top: 15px;
+    }
+  }
+
+
+
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: $green;
+}

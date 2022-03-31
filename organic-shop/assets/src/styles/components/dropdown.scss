@@ -1,0 +1,20 @@
+.dropdown {
+
+    &-toggle {
+        &::after {
+            color: $green;
+        }
+
+        &__menu {
+            &:after {
+                color: $white;
+            }
+        }
+    }
+
+    &-menu.dropdown-menu__a {
+        width: 100vw;
+        height: 100vh;
+        border: 1px solid $green;
+    }
+}

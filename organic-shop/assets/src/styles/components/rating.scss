@@ -1,0 +1,57 @@
+.rating {
+  position: relative;
+  bottom: -100px;
+
+  &-container {
+    background-image: url("../img/icons/bgfonpng.png");
+    //background-repeat: no-repeat;
+    //background-size: cover;
+    //background-position: center;
+    background-color: $green;
+  }
+
+  &-wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 100px;
+
+    @include below ($md-max){
+      padding-top: 30px;
+      padding-bottom: 45px;
+    }
+    @include below ($sm-max){
+      padding: 30px 0;
+    }
+
+    &__num {
+      font-family: 'Oswald';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 90px;
+      margin-bottom: 0;
+      color: $white;
+
+      @include below ($md-max){
+        font-size: 55px;
+        line-height: 80px;
+      }
+      @include below ($xs-max) {
+        font-size: 43px;
+        line-height: 45px;
+      }
+    }
+
+    &__text {
+      font-family: 'Oswald';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 0;
+      color: $white;
+    }
+  }
+}

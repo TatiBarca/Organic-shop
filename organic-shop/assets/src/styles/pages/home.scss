@@ -1,0 +1,312 @@
+.testimonial {
+  position: relative;
+  //z-index: -2;
+  padding-top: 300px;
+  overflow: hidden;
+
+  @include below($xs-max) {
+    padding-top: 180px;
+  }
+
+  @include below($md-max) {
+    padding-bottom: 50px;
+  }
+  &-image {
+    line-height: 0;
+  }
+
+  &-green {
+    position: absolute;
+    bottom: 0;
+    right: -790px;
+    width: 485px;
+    height: 740px;
+    text-align: center;
+    background: rgba(118, 167, 19, 0.3);
+    z-index: -1;
+
+    @include below($md-max) {
+      right: -378px;
+    }
+    @include below($xs-max) {
+      right: -382px;
+    }
+  }
+
+  &-orange {
+    position: absolute;
+    bottom: 0px;
+    left: -171px;
+    width: 385px;
+    height: 549px;
+    text-align: center;
+    background-color: #FF6600;
+    z-index: -1;
+    & img {
+      display: none;
+    }
+
+    @include below($xs-max) {
+      left: -185px;
+    }
+  }
+  &-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //-webkit-box-shadow: 1px 1px 17px 4px rgba(0,0,0,0.37);
+    //box-shadow: 1px 1px 17px 4px rgba(0,0,0,0.37);
+
+    &__text {
+      //font-family: 'Gilroy';
+      font-style: italic;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 27px;
+      color: #AAAAAA;
+    }
+  }
+
+  &-rating {
+    text-align: center;
+    margin-bottom: 15px;
+
+    &__image {
+      border-radius: 50%;
+    }
+
+    &__name {
+      font-family: 'Oswald';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 27px;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    &__prof {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 19px;
+      text-align: center;
+      margin-bottom: 0;
+      color: #888888;
+    }
+
+    &__star {
+      margin-bottom: 40px;
+    }
+
+    &-image {
+      border-radius: 50%;
+    }
+  }
+
+  &-slider {
+    position: relative;
+    background-color: $white;
+    overflow: hidden;
+    box-shadow: 1px 18px 24px 1px rgba(0, 0, 0, 0.37);
+    padding: 20px;
+    height: 85%;
+    width: 100%;
+
+    @include below($sm-max) {
+      height: 100%;
+    }
+  }
+
+
+
+}
+
+.organic {
+  position: relative;
+  background-color: $light-green;
+  padding: 100px 0 200px;
+
+  @include below($md-max) {
+    //padding: 30px 0 130px;
+    padding: 0  0 100px;
+
+  }
+
+  &__text {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 74px;
+    text-transform: uppercase;
+    color: $green;
+    margin-bottom: 0;
+
+    @include below($md-max) {
+      font-size: 46px;
+      line-height: 65px;
+      margin-bottom: 0;
+    }
+
+    @include below($sm-max) {
+      font-size: 29px;
+      line-height: 35px;
+      margin-bottom: 0;
+    }
+
+    @include below($xs-max) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+
+  &__title {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 63px;
+    line-height: 70px;
+    text-transform: uppercase;
+    margin: 0;
+    color: $black;
+
+    @include below($md-max) {
+      font-size: 48px;
+      line-height: 50px;
+    }
+
+    @include below($sm-max) {
+      font-size: 32px;
+      line-height: 35px;
+    }
+    @include below($xs-max) {
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+
+  &-swiper {
+    display: flex;
+    padding: 0 100px;
+
+    @include below($md-max) {
+      flex-direction: column;
+      padding: 0 57px;
+    }
+  }
+
+  &-swiper2 {
+    & img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__image {
+    max-width: 85%;
+
+    @include below($md-max) {
+      max-width: 70%;
+    }
+
+
+  }
+
+  &-btn {
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 15px 35px;
+    text-transform: uppercase;
+    background-color: $green;
+    border: none;
+    color: white;
+    transition: .2s linear;
+    cursor: pointer;
+
+    &:hover {
+      background-color: white;
+      color: $green;
+      transition: .2s linear;
+    }
+  }
+
+
+}
+
+.social {
+  margin: auto;
+
+  &__item {
+    display: inline-block;
+    margin-left: 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:hover {
+      color: $green;
+    }
+  }
+
+
+    &__link {
+
+      &:hover {
+        color: $green;
+      }
+
+  }
+}
+
+
+
+
+// .dropdown-toggle::after {
+//     color: $green;
+// }
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color:    #909;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:    #909;
+  opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:    #909;
+  opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:    #909;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  color:    #909;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+  color:    $grey;
+  font-size: 16px;
+
+  @include below($md-max) {
+    font-size: 14px;
+  }
+  @include below($xs-max) {
+    font-size: 9px;
+  }
+
+}

@@ -1,0 +1,46 @@
+.service {
+    &-container {
+        background-color: white;
+        position: relative;
+        top: -100px;
+        border: 1px solid grey;
+    }
+    &-block {
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        padding: 70px 0;
+
+        @include below($md-max) {
+            padding: 35px 0;
+        }
+
+        &_last {
+            border-right:none;
+        }
+        &__about {
+            padding: 0 15px;
+        }
+        &__title {
+            font-family: 'Oswald';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 0;
+        }
+
+        &__text {
+            font-family: 'Gilroy', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 0;
+            color: #666666;
+        }
+    }
+        
+    }
+
+

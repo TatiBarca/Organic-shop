@@ -1,0 +1,158 @@
+.goods {
+  $self: &;
+  background-color: #F8F8F8;
+  padding: 100px 0;
+
+
+  @include below ($xs-max){
+    padding: 50px 0;
+  }
+
+  &__product {
+    //width: 150px;
+    height: 150px;
+  }
+
+  &-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid $green;
+    padding: 25px 25px 30px;
+    height: 100%;
+    transition: all .1s;
+
+    & img {
+      margin: auto;
+    }
+
+    &:hover {
+      transition: all .1s;
+      background-color: $white;
+      border: 1px solid $grey;
+    }
+
+    &:hover {
+      #{$self}__title {
+        color: $green;
+        transition: all .1s;
+      }
+    }
+
+    &:hover {
+      #{$self}-btn {
+        display: none;
+        transition: all .1s;
+
+        @include below($xs-max){
+          display: block;
+
+        }
+      }
+    }
+
+    &:hover {
+      #{$self}-btn_button {
+        display: block;
+        transition: all .1s;
+
+        @include below($xs-max){
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__image {
+    max-width: 100%;
+    // height:  100%;
+  }
+
+  &__desc {
+    display: flex;
+    margin-top: auto;
+    flex-direction: column;
+    text-align: center;
+
+     @include below($sm-max) {
+    padding: 0px 30px;
+
+     }
+
+  }
+
+
+&__title {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 44px;
+  margin-bottom: 13px;
+  color: $black;
+
+  &:hover {
+    color: $green;
+  }
+}
+
+&__text {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #888888;
+}
+
+&-btn {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  background-color: $green;
+  padding: 10px 15px;
+  color: #FFFFFF;
+  border: none;
+  margin-top: auto;
+  display: block;
+  transition: all .1s;
+  margin: auto;
+  height: 40px;
+
+
+  @include below($xs-max) {
+    &:hover {
+      background-color:#FF6600;
+    }
+  }
+
+
+  &_orange {
+    background-color: #FF6600;
+  }
+
+  &_sales {
+    margin: 0;
+    margin-left: auto;
+  }
+
+  &_button {
+    display: none;
+    background-color: $white;
+    border: 1px solid $green;
+    transition: all .1s;
+    margin: auto;
+    height: 40px;
+  }
+}
+
+}
+
+
+// .adipiscing {
+//     margin-top: auto;
+// }

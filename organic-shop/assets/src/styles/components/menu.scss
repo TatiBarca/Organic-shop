@@ -1,0 +1,32 @@
+.menu {
+    
+    // &-info {
+    //     display: flex;
+    //     flex-direction: column;
+
+    //     font-size: 20px;
+    //     padding: 0 15px;
+    //     // margin: 0;
+    // }
+    &-language{
+        display: inline-block;
+        font-size: 20px;
+
+        &__first {
+            font-size: 20px;
+        }
+    }
+
+    &-link {
+        display: inline-block;
+        font-size: 20px;
+    }
+    &-items {
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+        & li {
+            margin-bottom: 20px;
+        }
+    }
+}

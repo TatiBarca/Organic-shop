@@ -1,0 +1,62 @@
+.modal {
+  $self: &;
+  &-btn {
+    background-color: $green;
+    border:none;
+    color:$white;
+    padding: 0px 14px;
+    margin-right: 10px;
+
+    @include below ($md-max){
+      padding: 8px 15px;
+    }
+  }
+  &-header,
+  &-footer {
+    border:none;
+  }
+  &.fade.show .modal-btn {
+      padding: 5px 10px;
+      border-radius: 4px;
+  }
+}
+.modalClose-btn {
+  border-radius: 4px;
+  background-color: $white;
+  border: 1px solid $green;
+  color: $green;
+  padding: 4px 9px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//.modal-btn {
+//  background-color: $green;
+//  border:none;
+//  color:$white;
+//  padding: 0px 12px;
+//  margin-right: 5px;
+//}
+//.modal.fade.show .modal-btn {
+//  padding: 5px 10px;
+//  border-radius: 4px;
+//}
+//.modalClose-btn {
+//  border-radius: 4px;
+//  background-color: $white;
+//  border: 1px solid $green;
+//  color: $green;
+//  padding: 4px 9px;
+//}
+//.modal-header, .modal-footer {
+//  border:none;
+//}

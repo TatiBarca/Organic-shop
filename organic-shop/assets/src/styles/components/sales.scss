@@ -1,0 +1,43 @@
+.sales {
+
+  padding: 100px 0;
+
+  &-block {
+    background-image: url('../img/icons/greenbg.png') ;
+    background-repeat: no-repeat;
+    background-color: $green;
+    //background-position-x: left;
+    background-position-y: bottom;
+    text-align: right;
+    padding: 45px 0;
+    padding-right: 40px;
+
+    &_second {
+      background-image: url("../img/icons/orangebg.png");
+      background-repeat: no-repeat;
+      background-color:#FF6600;
+
+    }
+
+    &__text {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      text-transform: uppercase;
+      color: $white;
+    }
+    &__title {
+      font-family: 'Oswald';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 59px;
+      text-align: right;
+      color: $white
+    }
+
+  }
+
+}

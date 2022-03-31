@@ -1,0 +1,141 @@
+.blog {
+  padding-top: 70px;
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    transition: .1s linear;
+
+    &:hover {
+      -webkit-box-shadow: 1px 18px 24px 1px rgba(0, 0, 0, 0.37);
+      box-shadow: 1px 18px 24px 1px rgba(0, 0, 0, 0.37);
+      //#{$self}__title{
+      //  color:$green;
+      //  transition: .1s linear;
+
+
+      .blog-content__title {
+        color: $green;
+        transition: .1s linear;
+      }
+
+    }
+  }
+
+  &-content {
+    $self: &;
+    border: 1px solid $light-grey;
+    border-top: none;
+    padding: 19px 19px 0;
+
+    &__title {
+      font-family: 'Oswald';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 45px;
+      border-bottom: 1px solid $light-grey;
+      padding-bottom: 18px;
+      margin-bottom: 0;
+
+      @include below($xs-max) {
+        font-size: 26px;
+        line-height: 36px;
+      }
+    }
+  }
+
+  &-social {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0 18px;
+
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+
+    @include below($md-max) {
+      font-size: 18px;
+    }
+    @include below($xs-max) {
+      font-size: 10px;
+    }
+
+    & .icon-user,
+    .icon-tag,
+    .icon-comment,
+    {
+      font-size: 15px;
+      margin-right: 10px;
+      color: $green;
+    }
+
+  }
+
+
+  &-date {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 30px;
+
+    & .icon-calendar {
+      font-size: 15px;
+      margin-right: 10px;
+      color: $green;
+    }
+
+
+    &__calendar {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 11px;
+      line-height: 16px;
+      //margin-left: 20px;
+
+      @include below($md-max) {
+        font-size: 18px;
+      }
+      @include below($xs-max) {
+        font-size: 11px;
+      }
+    }
+
+    &__info {
+      position: relative;
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 20px;
+      color: $green;
+      text-transform: uppercase;
+      margin-right: 12px;
+
+      @include below($md-max) {
+        font-size: 18px;
+      }
+      @include below($xs-max) {
+        font-size: 13px;
+      }
+
+      &:hover {
+        color: $green;
+      }
+
+      &:after {
+        position: absolute;
+        content: "";
+        top: 27%;
+        right: -12px;
+        width: 6px;
+        height: 9px;
+        background-image: url("../img/icons/blogv.png");
+      }
+
+    }
+  }
+
+}
